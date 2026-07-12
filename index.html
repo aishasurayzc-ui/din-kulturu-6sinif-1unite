@@ -437,6 +437,51 @@
 .ozel-toast{ position:fixed; bottom:24px; left:50%; transform:translateX(-50%); background:#22333b; color:#fff; padding:14px 22px; border-radius:24px; box-shadow:0 6px 20px rgba(0,0,0,.3); z-index:1000; animation:ozelToastGir .3s ease; font-weight:bold; max-width:80vw; text-align:center; }
 @keyframes ozelToastGir{ from{opacity:0; transform:translateX(-50%) translateY(20px);} to{opacity:1; transform:translateX(-50%) translateY(0);} }
 
+
+/* ===================== 6 BOLUMLU ZENGINLESTIRME (Konu Ozeti) ===================== */
+.zb-kutu{ border-radius:12px; padding:16px 18px; margin:16px 0; box-shadow:0 3px 10px rgba(0,0,0,.08); }
+.zb-baslik{ font-weight:bold; font-size:1.05em; margin:0 0 8px; display:flex; align-items:center; gap:8px; }
+.zb-metin{ margin:0; line-height:1.55; font-size:.97em; }
+.zb-merak{ background:#f3ecfb; border-left:6px solid #7c3aed; }
+.zb-merak .zb-baslik{ color:#7c3aed; }
+.zb-yanlis{ background:#fff0f0; border-left:6px solid #d62828; }
+.zb-yanlis .zb-baslik{ color:#d62828; }
+.zb-yanlis .zb-yanlis-satir{ color:#a31515; margin:4px 0; }
+.zb-yanlis .zb-dogru-satir{ color:#2d6a4f; margin:4px 0; font-weight:bold; }
+.zb-ornek{ background:#eafaf1; border-left:6px solid #40916c; }
+.zb-ornek .zb-baslik{ color:#40916c; }
+.zb-dusun{ background:#fff4e6; border-left:6px solid #f4a261; }
+.zb-dusun .zb-baslik{ color:#c9740b; }
+.zb-aile{ background:#fdeef5; border-left:6px solid #d6336c; }
+.zb-aile .zb-baslik{ color:#d6336c; }
+.zb-degerlendir{ background:#eaf2ff; border-left:6px solid #2a6f97; }
+.zb-degerlendir .zb-baslik{ color:#2a6f97; }
+.zb-degerlendir ul{ list-style:none; padding:0; margin:0; }
+.zb-degerlendir li{ display:flex; align-items:flex-start; gap:8px; margin:8px 0; font-size:.95em; line-height:1.4; }
+.zb-degerlendir input[type=checkbox]{ width:18px; height:18px; margin-top:2px; flex-shrink:0; accent-color:#2a6f97; cursor:pointer; }
+.zb-degerlendir label{ cursor:pointer; }
+
+/* ===================== 6 BOLUMLU ZENGINLESTIRME (Sunum slaytlari) ===================== */
+.s-zb{ color:#22333b; }
+.s-zb-merak{ background:#f3ecfb; }
+.s-zb-yanlis{ background:#fff0f0; }
+.s-zb-ornek{ background:#eafaf1; }
+.s-zb-dusun{ background:#fff4e6; }
+.s-zb-aile{ background:#fdeef5; }
+.s-zb-degerlendir{ background:#eaf2ff; }
+.zb-slayt-ust{ font-weight:bold; letter-spacing:1.5px; font-size:.95em; margin-bottom:14px; }
+.s-zb-merak .zb-slayt-ust{ color:#7c3aed; }
+.s-zb-yanlis .zb-slayt-ust{ color:#d62828; }
+.s-zb-ornek .zb-slayt-ust{ color:#40916c; }
+.s-zb-dusun .zb-slayt-ust{ color:#c9740b; }
+.s-zb-aile .zb-slayt-ust{ color:#d6336c; }
+.s-zb-degerlendir .zb-slayt-ust{ color:#2a6f97; }
+.zb-slayt-metin{ font-size:1.1em; line-height:1.5; max-width:640px; }
+.zb-slayt-yanlis{ color:#a31515; font-size:1em; margin:6px 0; }
+.zb-slayt-dogru{ color:#2d6a4f; font-size:1em; margin:6px 0; font-weight:bold; }
+.zb-slayt-liste{ list-style:none; padding:0; margin:0; text-align:left; max-width:600px; }
+.zb-slayt-liste li{ font-size:1em; margin:8px 0; }
+
 </style>
 </head>
 <body>
@@ -579,6 +624,11 @@
       <li>Kur'an'da peygamberler için resul (elçi) ve nebi (haberci) kavramları kullanılır; bunlardan türeyen risalet ve nübüvvet kavramları da peygamberlik görevini ifade eder.</li><li>Kur'an'da ismi geçen 25 peygamber vardır. İlk peygamber Hz. Âdem, son peygamber Hz. Muhammed'dir (sav).</li><li>Peygamberler Kur'an'da ismi geçenlerle sınırlı değildir.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zb s-zb-merak" data-tip="zb">
+    <p class="zb-slayt-ust">🤔 MERAK ETTİN Mİ?</p>
+    <p class="zb-slayt-metin">Kur'an'da ismi geçen peygamber sayısı 25'tir; ancak gönderilen peygamber sayısının çok daha fazla olduğuna inanılır.</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--yesil)">
     <h3>📌 İnsanlara Rehber: Peygamber (3/3)</h3>
@@ -586,10 +636,12 @@
       <li>Peygamberlerin kendilerine inanmayanlara peygamberliklerini ispat etmek amacıyla Allah'ın (cc) izniyle gösterdikleri olağanüstü olaylara mucize denir.</li><li>Hz. Peygamber'in en büyük mucizesi Kur'an-ı Kerim'dir.</li>
     </ul>
   </div>
-  <div class="sunum-slayt s-zg s-zg-bilgi" data-tip="zg">
-    <p class="zg-slayt-ust">💡 BİLGİ KUTUSU</p>
-    <p class="zg-slayt-metin">Peygamberlerin ortak altı özelliği vardır: sıdk (doğruluk), emanet (güvenilirlik), fetanet (akıllılık), ismet (günahsızlık), tebliğ (bildirme) ve adalet.</p>
+  <div class="sunum-slayt s-zb s-zb-yanlis" data-tip="zb">
+    <p class="zb-slayt-ust">❌ YANLIŞ BİLİNENLER</p>
+    <p class="zb-slayt-yanlis">❌ Bazıları farklı peygamberlere farklı "dinler" geldiğini, bunların birbirinden bağımsız olduğunu düşünür.</p>
+    <p class="zb-slayt-dogru">✅ Tüm peygamberlerin temel çağrısı aynıdır: Allah'ın birliğine iman ve O'na kulluk; farklılıklar zamana/topluma göre uygulama detaylarındadır.</p>
   </div>
+
 
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--mavi)">
@@ -605,10 +657,11 @@
       <li>Vahyin temel amacı, insanları doğru yola yönlendirerek dünya ve ahiret mutluluğunu sağlamaktır.</li><li>Her peygamberin öne çıkan farklı bir özelliği vardır: Hz. İbrahim teslimiyeti, Hz. Yakub ve Hz. Eyyüb sabrı, Hz.</li><li>Yusuf iffeti ve affediciliği, Hz. Musa zulme karşı mücadelesi, Hz. Muhammed (sav) ise güzel ahlakıyla örnek gösterilir.</li>
     </ul>
   </div>
-  <div class="sunum-slayt s-zg s-zg-merak" data-tip="zg">
-    <p class="zg-slayt-ust">🤔 MERAK ETTİN Mİ?</p>
-    <p class="zg-slayt-metin">Kur'an'da kaç peygamberin ismi geçer? 25 peygamberin ismi Kur'an'da açıkça belirtilmiştir; gönderilen peygamber sayısı ise çok daha fazladır.</p>
+  <div class="sunum-slayt s-zb s-zb-ornek" data-tip="zb">
+    <p class="zb-slayt-ust">🌍 GERÇEK HAYATTAN BİR ÖRNEK</p>
+    <p class="zb-slayt-metin">Bir sınıfta farklı öğretmenlerin aynı dersi farklı şekillerde ama aynı temel bilgiyi anlatması gibi, peygamberler de farklı dönemlerde aynı tevhit mesajını iletmiştir.</p>
   </div>
+
 
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--kirmizi)">
@@ -617,16 +670,17 @@
       <li>İlahi kitaplar, insanların dünya ve ahirette mutlu olabilmesi için Allah'ın peygamberleri aracılığıyla gönderdiği kitaplardır.</li><li>Peygamberlere vahiy meleği Cebrail aracılığıyla ulaşmıştır. Dört büyük ilahi kitap: Tevrat (Hz.</li><li>Musa'ya, dili İbranice), Zebur (Hz. Davud'a, dili İbranice), İncil (Hz. İsa'ya, dili Aramice) ve Kur'an-ı Kerim (Hz.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zb s-zb-dusun" data-tip="zb">
+    <p class="zb-slayt-ust">💭 DÜŞÜN VE CEVAPLA</p>
+    <p class="zb-slayt-metin">Peygamberlerin ortak özellikleri (sıdk, emanet, fetanet) neden bu kadar önemlidir?</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--kirmizi)">
     <h3>📌 İlahi Kitaplar (2/3)</h3>
     <ul class="si-liste">
       <li>Muhammed'e sav, dili Arapça).</li><li>Kur'an-ı Kerim'den önceki ilahi kitaplar zamanla tahrif edildiği (değiştirildiği) için ilk hâliyle günümüze ulaşamamıştır.</li><li>Kur'an-ı Kerim ise değişmeden günümüze kadar gelmiştir ve kıyamete kadar da değişmeyecektir.</li>
     </ul>
-  </div>
-  <div class="sunum-slayt s-zg s-zg-soru" data-tip="zg">
-    <p class="zg-slayt-ust">❓ GÜNÜN SORUSU</p>
-    <p class="zg-slayt-metin">Sence bir peygamberin "güvenilir" olması neden bu kadar önemlidir?</p>
   </div>
 
 
@@ -636,6 +690,11 @@
       <li>Hz. Muhammed'e (sav) verilen, "peygamberlerin sonuncusu" anlamına gelen unvana Hatemülenbiya denir.</li><li>Kendisine ilk vahiy Nur Dağı'ndaki Hira Mağarası'nda gelmiştir.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zb s-zb-aile" data-tip="zb">
+    <p class="zb-slayt-ust">👨‍👩‍👧 AİLEMLE YAPIYORUM</p>
+    <p class="zb-slayt-metin">Ailenle birlikte dört büyük kitabın (Tevrat, Zebur, İncil, Kur'an) hangi peygambere indiğini konuşup küçük bir tablo çıkarın.</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--turkuaz)">
     <h3>📌 Bir Sure Öğreniyorum: Felak Suresi (1/2)</h3>
@@ -643,10 +702,16 @@
       <li>Felak suresi, adını birinci ayette geçen "sabah aydınlığı, şafak" anlamına gelen "felak" kelimesinden alır ve beş ayetten oluşur.</li><li>Felak ve Nâs surelerine birlikte, "kendileriyle Allah'a sığınılan" anlamında Muavvizeteyn denir.</li><li>Felak suresinde bazı kötülükler sıralanarak bunlardan Yüce Allah'a sığınılması gerektiği belirtilir. Hz.</li>
     </ul>
   </div>
-  <div class="sunum-slayt s-zg s-zg-hayat" data-tip="zg">
-    <p class="zg-slayt-ust">🌍 GERÇEK HAYAT BAĞLANTISI</p>
-    <p class="zg-slayt-metin">Sözünde durmak, güvenilir olmak, peygamberlerin ortak özelliğidir — arkadaşlarımıza karşı da bu özelliği taşımaya çalışabiliriz.</p>
+  <div class="sunum-slayt s-zb s-zb-degerlendir" data-tip="zb">
+    <p class="zb-slayt-ust">✅ KENDİMİ DEĞERLENDİRİYORUM</p>
+    <ul class="zb-slayt-liste">
+      <li>☐ Peygamberlerin ortak özelliklerini sayabilirim.</li>
+      <li>☐ Hangi kitabın hangi peygambere indiğini biliyorum.</li>
+      <li>☐ Vahiy kavramını açıklayabilirim.</li>
+      <li>☐ Peygamberleri örnek alarak güvenilir olmaya çalışıyorum.</li>
+    </ul>
   </div>
+
 
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--turkuaz)">
@@ -723,10 +788,11 @@
     <div class="aciklama"><b>Peygamberlerin Özellikleri:</b> Sıdk (dürüstlük), Emanet (güvenilirlik), Fetanet (akıllılık/zekâ), İsmet (günahtan korunmuşluk), Tebliğ (vahyi eksiksiz iletme).<br><b>Peygamberlerin Görevleri:</b> Tebliğ (bildirme), İnzar (uyarma), Tebşir (müjdeleme), Tezkiye (kötü huylardan arındırma), Tebyin (açıklama), Temsil (örneklik).</p>
     <p>Peygamberlerin kendilerine inanmayanlara peygamberliklerini ispat etmek amacıyla Allah'ın (cc) izniyle gösterdikleri olağanüstü olaylara <b>mucize</b> denir. Hz. Peygamber'in en büyük mucizesi Kur'an-ı Kerim'dir.</p>
   </div>
-  <div class="zg-kutu zg-bilgi">
-    <p class="zg-baslik">💡 Bilgi Kutusu</p>
-    <p class="zg-metin">Peygamberlerin ortak altı özelliği vardır: sıdk (doğruluk), emanet (güvenilirlik), fetanet (akıllılık), ismet (günahsızlık), tebliğ (bildirme) ve adalet.</p>
+  <div class="zb-kutu zb-merak">
+    <p class="zb-baslik">🤔 Merak Ettin mi?</p>
+    <p class="zb-metin">Kur'an'da ismi geçen peygamber sayısı 25'tir; ancak gönderilen peygamber sayısının çok daha fazla olduğuna inanılır.</p>
   </div>
+
 
 
   <div class="kutu-panel">
@@ -734,10 +800,16 @@
     <p><b>Vahiy</b>, Yüce Allah'ın emir ve hükümlerini peygamberlere bildirmesidir. Allah (cc), insanların akılla çözemeyeceği konularda doğru bilgiye ulaşmaları için vahiy göndermiştir. Kur'an'da inanç, ibadet, ahlak ve toplumsal konularda mesajlar bulunur; bir kısmı <b>kıssa</b> (geçmiş peygamberler ve milletlerle ilgili ibretli olay) yoluyla anlatılmıştır.</p>
     <p>Vahyin temel amacı, insanları doğru yola yönlendirerek dünya ve ahiret mutluluğunu sağlamaktır. Her peygamberin öne çıkan farklı bir özelliği vardır: Hz. İbrahim teslimiyeti, Hz. Yakub ve Hz. Eyyüb sabrı, Hz. Yusuf iffeti ve affediciliği, Hz. Musa zulme karşı mücadelesi, Hz. Muhammed (sav) ise güzel ahlakıyla örnek gösterilir.</p>
   </div>
-  <div class="zg-kutu zg-merak">
-    <p class="zg-baslik">🤔 Merak Ettin mi?</p>
-    <p class="zg-metin">Kur'an'da kaç peygamberin ismi geçer? 25 peygamberin ismi Kur'an'da açıkça belirtilmiştir; gönderilen peygamber sayısı ise çok daha fazladır.</p>
+  <div class="zb-kutu zb-yanlis">
+    <p class="zb-baslik">❌ Yanlış Bilinenler</p>
+    <p class="zb-metin zb-yanlis-satir">❌ Bazıları farklı peygamberlere farklı "dinler" geldiğini, bunların birbirinden bağımsız olduğunu düşünür.</p>
+    <p class="zb-metin zb-dogru-satir">✅ Tüm peygamberlerin temel çağrısı aynıdır: Allah'ın birliğine iman ve O'na kulluk; farklılıklar zamana/topluma göre uygulama detaylarındadır.</p>
   </div>
+  <div class="zb-kutu zb-ornek">
+    <p class="zb-baslik">🌍 Gerçek Hayattan Bir Örnek</p>
+    <p class="zb-metin">Bir sınıfta farklı öğretmenlerin aynı dersi farklı şekillerde ama aynı temel bilgiyi anlatması gibi, peygamberler de farklı dönemlerde aynı tevhit mesajını iletmiştir.</p>
+  </div>
+
 
 
   <div class="kutu-panel">
@@ -747,10 +819,15 @@
     <div class="aciklama">Yüce Allah bazı peygamberlere kitap dışında sayfalar da göndermiştir; bunlara <b>suhuf</b> denir: Hz. Âdem'e 10, Hz. Şit'e 50, Hz. İdris'e 30, Hz. İbrahim'e 10 sayfa suhuf gönderilmiştir.</div>
     <p>Hz. Muhammed'e (sav) verilen, "peygamberlerin sonuncusu" anlamına gelen unvana <b>Hatemülenbiya</b> denir. Kendisine ilk vahiy <b>Nur Dağı'ndaki Hira Mağarası</b>'nda gelmiştir.</p>
   </div>
-  <div class="zg-kutu zg-soru">
-    <p class="zg-baslik">❓ Günün Sorusu</p>
-    <p class="zg-metin">Sence bir peygamberin "güvenilir" olması neden bu kadar önemlidir?</p>
+  <div class="zb-kutu zb-dusun">
+    <p class="zb-baslik">💭 Düşün ve Cevapla</p>
+    <p class="zb-metin">Peygamberlerin ortak özellikleri (sıdk, emanet, fetanet) neden bu kadar önemlidir?</p>
   </div>
+  <div class="zb-kutu zb-aile">
+    <p class="zb-baslik">👨‍👩‍👧 Ailemle Yapıyorum</p>
+    <p class="zb-metin">Ailenle birlikte dört büyük kitabın (Tevrat, Zebur, İncil, Kur'an) hangi peygambere indiğini konuşup küçük bir tablo çıkarın.</p>
+  </div>
+
 
 
   <div class="kutu-panel">
@@ -766,10 +843,16 @@
       <tr><td style="padding:6px;">Ve min şerri hâsidin izâ hased</td><td style="padding:6px;">Kıskandığı vakit kıskanç kişinin şerrinden!"</td></tr>
     </table>
   </div>
-  <div class="zg-kutu zg-hayat">
-    <p class="zg-baslik">🌍 Gerçek Hayat Bağlantısı</p>
-    <p class="zg-metin">Sözünde durmak, güvenilir olmak, peygamberlerin ortak özelliğidir — arkadaşlarımıza karşı da bu özelliği taşımaya çalışabiliriz.</p>
+  <div class="zb-kutu zb-degerlendir">
+    <p class="zb-baslik">✅ Kendimi Değerlendiriyorum</p>
+    <ul>
+      <li><input type="checkbox" id="deg_6-1_0" onchange="degKaydet('6-1')"><label for="deg_6-1_0">Peygamberlerin ortak özelliklerini sayabilirim.</label></li>
+      <li><input type="checkbox" id="deg_6-1_1" onchange="degKaydet('6-1')"><label for="deg_6-1_1">Hangi kitabın hangi peygambere indiğini biliyorum.</label></li>
+      <li><input type="checkbox" id="deg_6-1_2" onchange="degKaydet('6-1')"><label for="deg_6-1_2">Vahiy kavramını açıklayabilirim.</label></li>
+      <li><input type="checkbox" id="deg_6-1_3" onchange="degKaydet('6-1')"><label for="deg_6-1_3">Peygamberleri örnek alarak güvenilir olmaya çalışıyorum.</label></li>
+    </ul>
   </div>
+
 
 </section>
 
@@ -3216,6 +3299,27 @@ function ozelOnay(mesaj, callback){
   btnler[0].onclick = ()=>{ arka.remove(); callback(true); };
   btnler[1].onclick = ()=>{ arka.remove(); callback(false); };
 }
+
+
+// ===================== KENDIMI DEGERLENDIRIYORUM - CHECKBOX KAYDI =====================
+function degOku(uniteKimlik){
+  try{ return JSON.parse(localStorage.getItem('dkabDegerlendirme_'+uniteKimlik)) || {}; }catch(e){ return {}; }
+}
+function degKaydet(uniteKimlik){
+  const durum = {};
+  document.querySelectorAll('[id^="deg_'+uniteKimlik+'_"]').forEach(cb=>{ durum[cb.id] = cb.checked; });
+  try{ localStorage.setItem('dkabDegerlendirme_'+uniteKimlik, JSON.stringify(durum)); }catch(e){}
+}
+function degYukle(uniteKimlik){
+  const durum = degOku(uniteKimlik);
+  Object.keys(durum).forEach(id=>{
+    const cb = document.getElementById(id);
+    if(cb) cb.checked = durum[id];
+  });
+}
+document.addEventListener('DOMContentLoaded', function(){
+  if(typeof UNITE_KIMLIK !== 'undefined') degYukle(UNITE_KIMLIK);
+});
 
 </script>
 </body>

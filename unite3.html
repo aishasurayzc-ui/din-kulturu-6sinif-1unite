@@ -437,6 +437,51 @@
 .ozel-toast{ position:fixed; bottom:24px; left:50%; transform:translateX(-50%); background:#22333b; color:#fff; padding:14px 22px; border-radius:24px; box-shadow:0 6px 20px rgba(0,0,0,.3); z-index:1000; animation:ozelToastGir .3s ease; font-weight:bold; max-width:80vw; text-align:center; }
 @keyframes ozelToastGir{ from{opacity:0; transform:translateX(-50%) translateY(20px);} to{opacity:1; transform:translateX(-50%) translateY(0);} }
 
+
+/* ===================== 6 BOLUMLU ZENGINLESTIRME (Konu Ozeti) ===================== */
+.zb-kutu{ border-radius:12px; padding:16px 18px; margin:16px 0; box-shadow:0 3px 10px rgba(0,0,0,.08); }
+.zb-baslik{ font-weight:bold; font-size:1.05em; margin:0 0 8px; display:flex; align-items:center; gap:8px; }
+.zb-metin{ margin:0; line-height:1.55; font-size:.97em; }
+.zb-merak{ background:#f3ecfb; border-left:6px solid #7c3aed; }
+.zb-merak .zb-baslik{ color:#7c3aed; }
+.zb-yanlis{ background:#fff0f0; border-left:6px solid #d62828; }
+.zb-yanlis .zb-baslik{ color:#d62828; }
+.zb-yanlis .zb-yanlis-satir{ color:#a31515; margin:4px 0; }
+.zb-yanlis .zb-dogru-satir{ color:#2d6a4f; margin:4px 0; font-weight:bold; }
+.zb-ornek{ background:#eafaf1; border-left:6px solid #40916c; }
+.zb-ornek .zb-baslik{ color:#40916c; }
+.zb-dusun{ background:#fff4e6; border-left:6px solid #f4a261; }
+.zb-dusun .zb-baslik{ color:#c9740b; }
+.zb-aile{ background:#fdeef5; border-left:6px solid #d6336c; }
+.zb-aile .zb-baslik{ color:#d6336c; }
+.zb-degerlendir{ background:#eaf2ff; border-left:6px solid #2a6f97; }
+.zb-degerlendir .zb-baslik{ color:#2a6f97; }
+.zb-degerlendir ul{ list-style:none; padding:0; margin:0; }
+.zb-degerlendir li{ display:flex; align-items:flex-start; gap:8px; margin:8px 0; font-size:.95em; line-height:1.4; }
+.zb-degerlendir input[type=checkbox]{ width:18px; height:18px; margin-top:2px; flex-shrink:0; accent-color:#2a6f97; cursor:pointer; }
+.zb-degerlendir label{ cursor:pointer; }
+
+/* ===================== 6 BOLUMLU ZENGINLESTIRME (Sunum slaytlari) ===================== */
+.s-zb{ color:#22333b; }
+.s-zb-merak{ background:#f3ecfb; }
+.s-zb-yanlis{ background:#fff0f0; }
+.s-zb-ornek{ background:#eafaf1; }
+.s-zb-dusun{ background:#fff4e6; }
+.s-zb-aile{ background:#fdeef5; }
+.s-zb-degerlendir{ background:#eaf2ff; }
+.zb-slayt-ust{ font-weight:bold; letter-spacing:1.5px; font-size:.95em; margin-bottom:14px; }
+.s-zb-merak .zb-slayt-ust{ color:#7c3aed; }
+.s-zb-yanlis .zb-slayt-ust{ color:#d62828; }
+.s-zb-ornek .zb-slayt-ust{ color:#40916c; }
+.s-zb-dusun .zb-slayt-ust{ color:#c9740b; }
+.s-zb-aile .zb-slayt-ust{ color:#d6336c; }
+.s-zb-degerlendir .zb-slayt-ust{ color:#2a6f97; }
+.zb-slayt-metin{ font-size:1.1em; line-height:1.5; max-width:640px; }
+.zb-slayt-yanlis{ color:#a31515; font-size:1em; margin:6px 0; }
+.zb-slayt-dogru{ color:#2d6a4f; font-size:1em; margin:6px 0; font-weight:bold; }
+.zb-slayt-liste{ list-style:none; padding:0; margin:0; text-align:left; max-width:600px; }
+.zb-slayt-liste li{ font-size:1em; margin:8px 0; }
+
 </style>
 </head>
 <body>
@@ -579,10 +624,11 @@
       <li>Yalan söylemek insanlar arasında düşmanlık ve güvensizliğe yol açar. Hz.</li><li>Peygamber peygamberlikten önce "el-Emin" lakabıyla anılmıştır ve şakayla bile yalan söylememiştir.</li><li>Doğruluk peygamberlerin temel özelliklerindendir.</li>
     </ul>
   </div>
-  <div class="sunum-slayt s-zg s-zg-bilgi" data-tip="zg">
-    <p class="zg-slayt-ust">💡 BİLGİ KUTUSU</p>
-    <p class="zg-slayt-metin">Vitir namazının son rekâtında okunan kunut duaları, Allah'tan yardım ve bağışlanma dilemek için okunur.</p>
+  <div class="sunum-slayt s-zb s-zb-merak" data-tip="zb">
+    <p class="zb-slayt-ust">🤔 MERAK ETTİN Mİ?</p>
+    <p class="zb-slayt-metin">15 Temmuz 2016'da Ömer Halisdemir'in kahramanlığı, vatan sevgisinin en güçlü örneklerinden biridir.</p>
   </div>
+
 
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--mavi)">
@@ -591,10 +637,12 @@
       <li>Merhamet; şefkat gösterme, acıma, yumuşak huylu olma, affetme ve bağışlama şeklinde tanımlanır.</li><li>İlişkili kavramlar sevgi, şefkat ve vicdandır.</li><li>Allah'ın rahmetini ifade eden isimlerin başında Rahman (bütün varlıklara merhamet) ve Rahim (ahirette sadece inananlara merhamet) gelir.</li>
     </ul>
   </div>
-  <div class="sunum-slayt s-zg s-zg-merak" data-tip="zg">
-    <p class="zg-slayt-ust">🤔 MERAK ETTİN Mİ?</p>
-    <p class="zg-slayt-metin">15 Temmuz'da Ömer Halisdemir'in kahramanlığı neden önemlidir? Vatan sevgisi ve fedakârlığın en güçlü örneklerinden biridir.</p>
+  <div class="sunum-slayt s-zb s-zb-yanlis" data-tip="zb">
+    <p class="zb-slayt-ust">❌ YANLIŞ BİLİNENLER</p>
+    <p class="zb-slayt-yanlis">❌ Bazıları vatan sevgisinin sadece savaş zamanında gösterilen bir duygu olduğunu düşünür.</p>
+    <p class="zb-slayt-dogru">✅ Vatan sevgisi; günlük hayatta kurallara uymak, çevreyi korumak, dürüst olmak gibi küçük ama sürekli davranışlarla da gösterilir.</p>
   </div>
+
 
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--mavi)">
@@ -603,6 +651,11 @@
       <li>Hz. Muhammed (sav) "âlemlere rahmet olarak" gönderilmiştir.</li><li>Merhametli insanlar kin, kibir, kıskançlık ve nefretten uzak durur; "Karıncayı bile incitmez." ifadesiyle anılır.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zb s-zb-ornek" data-tip="zb">
+    <p class="zb-slayt-ust">🌍 GERÇEK HAYATTAN BİR ÖRNEK</p>
+    <p class="zb-slayt-metin">Bir öğrencinin sınıfta yalan söylemeyip doğruyu söylemesi, hem kişisel dürüstlüğün hem de toplumsal güvenin küçük bir yapı taşıdır.</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--kirmizi)">
     <h3>📌 Adap ve Nezaket Kurallarına Uymak</h3>
@@ -610,10 +663,11 @@
       <li>Adap, edep kelimesinin çoğuludur; bir toplumda örf, âdet, kural hâlini almış iyi ve güzel davranışlardır.</li><li>Nezaket, insanlara kibar ve saygılı davranmaktır.</li><li>Üç ana başlık: Selamlaşma adabı (Selam: iyi niyet, saygı ve sevgi dileme duası; "Selamünaleyküm" ortak sözdür), İletişim ve konuşma adabı (doğru sözlü olmak, açık konuşmak, kırıcı olmamak; sosyal medyada mahremiyete…</li>
     </ul>
   </div>
-  <div class="sunum-slayt s-zg s-zg-soru" data-tip="zg">
-    <p class="zg-slayt-ust">❓ GÜNÜN SORUSU</p>
-    <p class="zg-slayt-metin">Bugün doğruluk ve dürüstlük konusunda nasıl bir örnek oldun?</p>
+  <div class="sunum-slayt s-zb s-zb-dusun" data-tip="zb">
+    <p class="zb-slayt-ust">💭 DÜŞÜN VE CEVAPLA</p>
+    <p class="zb-slayt-metin">Doğru sözlü olmanın toplumsal güven açısından önemi nedir?</p>
   </div>
+
 
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--turkuaz)">
@@ -622,10 +676,11 @@
       <li>Vatan, belli bir topluluğun ve milletin hâkim güç olarak yaşadığı, sınırları belli toprak parçasıdır.</li><li>Millet, aynı topraklarda yaşayan, din, dil, tarih, ülkü, gelenek birliği olan insan topluluğudur.</li><li>Allah yolunda veya vatan, namus, mal ve can güvenliği için savaşırken öldürülen mümine şehit, savaşıp sağ dönen kişiye gazi denir.</li>
     </ul>
   </div>
-  <div class="sunum-slayt s-zg s-zg-hayat" data-tip="zg">
-    <p class="zg-slayt-ust">🌍 GERÇEK HAYAT BAĞLANTISI</p>
-    <p class="zg-slayt-metin">Vatan sevgisi sadece savaş zamanında değil, günlük hayatta kurallara uymak, çevreyi korumak gibi küçük davranışlarla da gösterilir.</p>
+  <div class="sunum-slayt s-zb s-zb-aile" data-tip="zb">
+    <p class="zb-slayt-ust">👨‍👩‍👧 AİLEMLE YAPIYORUM</p>
+    <p class="zb-slayt-metin">Ailenle birlikte "bu hafta hiç yalan söylemeyeceğiz" gibi küçük bir aile kuralı belirleyip deneyiminizi paylaşın.</p>
   </div>
+
 
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:#7c3aed">
@@ -634,6 +689,16 @@
       <li>Kunut, sözlükte "itaat etmek, ibadet etmek ve ayakta durmak", terim olarak namazda Allah'a sığınmak ve dua etmek anlamına gelir.</li><li>Kunut duaları, yatsı namazının ardından kılınan vitir namazının son rekâtında okunur; zor durumlarda, salgın hastalıklarda ve doğal afetlerde de okunduğu rivayet edilir.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zb s-zb-degerlendir" data-tip="zb">
+    <p class="zb-slayt-ust">✅ KENDİMİ DEĞERLENDİRİYORUM</p>
+    <ul class="zb-slayt-liste">
+      <li>☐ Doğruluk ve dürüstlüğün önemini açıklayabilirim.</li>
+      <li>☐ Vatan sevgisine örnekler verebilirim.</li>
+      <li>☐ Kunut dualarının ne zaman okunduğunu biliyorum.</li>
+      <li>☐ Günlük hayatımda doğru sözlü olmaya özen gösteriyorum.</li>
+    </ul>
+  </div>
+
 
   <div class="sunum-slayt s-kavram" data-tip="kavram">
     <h3>🔑 Önemli Kavramlar (1/2)</h3>
@@ -700,26 +765,38 @@
     <p><b>Ahlak</b>, insanın iyi veya kötü vasıflandırılmasına yol açan manevi nitelikleri, huyları ve iradeli davranışlarının bütünüdür. <b>Doğruluk</b>, söz, davranış ve niyet bakımından dürüstlük ve iyilikten yana olmaktır; güven, adalet ve samimiyet gibi erdemleri kapsar. Verdiği sözde duran, <b>emanet</b>i koruyan bireyler toplumda değer kazanır.</p>
     <p><b>Yalan</b> söylemek insanlar arasında düşmanlık ve güvensizliğe yol açar. Hz. Peygamber peygamberlikten önce "el-Emin" lakabıyla anılmıştır ve şakayla bile yalan söylememiştir. Doğruluk peygamberlerin temel özelliklerindendir.</p>
   </div>
+  <div class="zb-kutu zb-merak">
+    <p class="zb-baslik">🤔 Merak Ettin mi?</p>
+    <p class="zb-metin">15 Temmuz 2016'da Ömer Halisdemir'in kahramanlığı, vatan sevgisinin en güçlü örneklerinden biridir.</p>
+  </div>
+
 
   <div class="kutu-panel">
     <h3 style="color:var(--mavi)">2️⃣ Merhametli Olmak</h3>
     <p><b>Merhamet</b>; şefkat gösterme, acıma, yumuşak huylu olma, affetme ve bağışlama şeklinde tanımlanır. İlişkili kavramlar sevgi, <b>şefkat</b> ve <b>vicdan</b>dır. Allah'ın rahmetini ifade eden isimlerin başında <b>Rahman</b> (bütün varlıklara merhamet) ve <b>Rahim</b> (ahirette sadece inananlara merhamet) gelir.</p>
     <p>Hz. Muhammed (sav) "âlemlere rahmet olarak" gönderilmiştir. Merhametli insanlar kin, kibir, kıskançlık ve nefretten uzak durur; "Karıncayı bile incitmez." ifadesiyle anılır.</p>
   </div>
-  <div class="zg-kutu zg-bilgi">
-    <p class="zg-baslik">💡 Bilgi Kutusu</p>
-    <p class="zg-metin">Vitir namazının son rekâtında okunan kunut duaları, Allah'tan yardım ve bağışlanma dilemek için okunur.</p>
+  <div class="zb-kutu zb-yanlis">
+    <p class="zb-baslik">❌ Yanlış Bilinenler</p>
+    <p class="zb-metin zb-yanlis-satir">❌ Bazıları vatan sevgisinin sadece savaş zamanında gösterilen bir duygu olduğunu düşünür.</p>
+    <p class="zb-metin zb-dogru-satir">✅ Vatan sevgisi; günlük hayatta kurallara uymak, çevreyi korumak, dürüst olmak gibi küçük ama sürekli davranışlarla da gösterilir.</p>
   </div>
+
 
 
   <div class="kutu-panel">
     <h3 style="color:var(--mavi)">3️⃣ Adap ve Nezaket Kurallarına Uymak</h3>
     <p><b>Adap</b>, edep kelimesinin çoğuludur; bir toplumda örf, âdet, kural hâlini almış iyi ve güzel davranışlardır. <b>Nezaket</b>, insanlara kibar ve saygılı davranmaktır. Üç ana başlık: <b>Selamlaşma adabı</b> (Selam: iyi niyet, saygı ve sevgi dileme duası; "Selamünaleyküm" ortak sözdür), <b>İletişim ve konuşma adabı</b> (doğru sözlü olmak, açık konuşmak, kırıcı olmamak; sosyal medyada mahremiyete dikkat), <b>Sofra adabı</b> (<b>besmele</b> ile başlamak, sağ elle ve önden yemek, el yıkamak, <b>israf</b>tan kaçınmak, teşekkür etmek).</p>
   </div>
-  <div class="zg-kutu zg-merak">
-    <p class="zg-baslik">🤔 Merak Ettin mi?</p>
-    <p class="zg-metin">15 Temmuz'da Ömer Halisdemir'in kahramanlığı neden önemlidir? Vatan sevgisi ve fedakârlığın en güçlü örneklerinden biridir.</p>
+  <div class="zb-kutu zb-ornek">
+    <p class="zb-baslik">🌍 Gerçek Hayattan Bir Örnek</p>
+    <p class="zb-metin">Bir öğrencinin sınıfta yalan söylemeyip doğruyu söylemesi, hem kişisel dürüstlüğün hem de toplumsal güvenin küçük bir yapı taşıdır.</p>
   </div>
+  <div class="zb-kutu zb-dusun">
+    <p class="zb-baslik">💭 Düşün ve Cevapla</p>
+    <p class="zb-metin">Doğru sözlü olmanın toplumsal güven açısından önemi nedir?</p>
+  </div>
+
 
 
   <div class="kutu-panel">
@@ -727,10 +804,11 @@
     <p><b>Vatan</b>, belli bir topluluğun ve milletin hâkim güç olarak yaşadığı, sınırları belli toprak parçasıdır. <b>Millet</b>, aynı topraklarda yaşayan, din, dil, tarih, ülkü, gelenek birliği olan insan topluluğudur. Allah yolunda veya vatan, namus, mal ve can güvenliği için savaşırken öldürülen mümine <b>şehit</b>, savaşıp sağ dönen kişiye <b>gazi</b> denir.</p>
     <div class="aciklama">Çanakkale Savaşı ve Kurtuluş Savaşı vatan mücadelesinin örnekleridir. 14 Ağustos 1974'te Kıbrıs Barış <b>Harekâtı</b> gerçekleştirilmiş, Türk ordusu 498, Kıbrıs Türkleri 1672 şehit vermiştir. 15 Temmuz 2016'daki <b>darbe</b> girişimi millî birlikle önlenmiş, Ömer Halisdemir bu uğurda şehit olmuştur. Vatan bağımsızlığı, milletin kendi topraklarında karar verme gücü olan <b>egemenlik</b> ile korunur.</div>
   </div>
-  <div class="zg-kutu zg-soru">
-    <p class="zg-baslik">❓ Günün Sorusu</p>
-    <p class="zg-metin">Bugün doğruluk ve dürüstlük konusunda nasıl bir örnek oldun?</p>
+  <div class="zb-kutu zb-aile">
+    <p class="zb-baslik">👨‍👩‍👧 Ailemle Yapıyorum</p>
+    <p class="zb-metin">Ailenle birlikte "bu hafta hiç yalan söylemeyeceğiz" gibi küçük bir aile kuralı belirleyip deneyiminizi paylaşın.</p>
   </div>
+
 
 
   <div class="kutu-panel">
@@ -738,10 +816,16 @@
     <p><b>Kunut</b>, sözlükte "itaat etmek, ibadet etmek ve ayakta durmak", terim olarak namazda Allah'a sığınmak ve dua etmek anlamına gelir. Kunut duaları, yatsı namazının ardından kılınan <b>vitir</b> namazının son rekâtında okunur; zor durumlarda, salgın hastalıklarda ve doğal afetlerde de okunduğu rivayet edilir.</p>
     <div class="aciklama">1. Kunut duasında Allah'tan yardım, bağışlanma ve hidayet istenir; O'na inanılır, <b>tevekkül</b> edilir (güvenilir). 2. Kunut duasında ise "Biz yalnız sana kulluk ederiz, namazı yalnız senin için kılarız..." denilerek ibadetin yalnız Allah'a yapıldığı vurgulanır.</div>
   </div>
-  <div class="zg-kutu zg-hayat">
-    <p class="zg-baslik">🌍 Gerçek Hayat Bağlantısı</p>
-    <p class="zg-metin">Vatan sevgisi sadece savaş zamanında değil, günlük hayatta kurallara uymak, çevreyi korumak gibi küçük davranışlarla da gösterilir.</p>
+  <div class="zb-kutu zb-degerlendir">
+    <p class="zb-baslik">✅ Kendimi Değerlendiriyorum</p>
+    <ul>
+      <li><input type="checkbox" id="deg_6-3_0" onchange="degKaydet('6-3')"><label for="deg_6-3_0">Doğruluk ve dürüstlüğün önemini açıklayabilirim.</label></li>
+      <li><input type="checkbox" id="deg_6-3_1" onchange="degKaydet('6-3')"><label for="deg_6-3_1">Vatan sevgisine örnekler verebilirim.</label></li>
+      <li><input type="checkbox" id="deg_6-3_2" onchange="degKaydet('6-3')"><label for="deg_6-3_2">Kunut dualarının ne zaman okunduğunu biliyorum.</label></li>
+      <li><input type="checkbox" id="deg_6-3_3" onchange="degKaydet('6-3')"><label for="deg_6-3_3">Günlük hayatımda doğru sözlü olmaya özen gösteriyorum.</label></li>
+    </ul>
   </div>
+
 
 </section>
 
@@ -3186,6 +3270,27 @@ function ozelOnay(mesaj, callback){
   btnler[0].onclick = ()=>{ arka.remove(); callback(true); };
   btnler[1].onclick = ()=>{ arka.remove(); callback(false); };
 }
+
+
+// ===================== KENDIMI DEGERLENDIRIYORUM - CHECKBOX KAYDI =====================
+function degOku(uniteKimlik){
+  try{ return JSON.parse(localStorage.getItem('dkabDegerlendirme_'+uniteKimlik)) || {}; }catch(e){ return {}; }
+}
+function degKaydet(uniteKimlik){
+  const durum = {};
+  document.querySelectorAll('[id^="deg_'+uniteKimlik+'_"]').forEach(cb=>{ durum[cb.id] = cb.checked; });
+  try{ localStorage.setItem('dkabDegerlendirme_'+uniteKimlik, JSON.stringify(durum)); }catch(e){}
+}
+function degYukle(uniteKimlik){
+  const durum = degOku(uniteKimlik);
+  Object.keys(durum).forEach(id=>{
+    const cb = document.getElementById(id);
+    if(cb) cb.checked = durum[id];
+  });
+}
+document.addEventListener('DOMContentLoaded', function(){
+  if(typeof UNITE_KIMLIK !== 'undefined') degYukle(UNITE_KIMLIK);
+});
 
 </script>
 </body>

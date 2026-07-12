@@ -437,6 +437,51 @@
 .ozel-toast{ position:fixed; bottom:24px; left:50%; transform:translateX(-50%); background:#22333b; color:#fff; padding:14px 22px; border-radius:24px; box-shadow:0 6px 20px rgba(0,0,0,.3); z-index:1000; animation:ozelToastGir .3s ease; font-weight:bold; max-width:80vw; text-align:center; }
 @keyframes ozelToastGir{ from{opacity:0; transform:translateX(-50%) translateY(20px);} to{opacity:1; transform:translateX(-50%) translateY(0);} }
 
+
+/* ===================== 6 BOLUMLU ZENGINLESTIRME (Konu Ozeti) ===================== */
+.zb-kutu{ border-radius:12px; padding:16px 18px; margin:16px 0; box-shadow:0 3px 10px rgba(0,0,0,.08); }
+.zb-baslik{ font-weight:bold; font-size:1.05em; margin:0 0 8px; display:flex; align-items:center; gap:8px; }
+.zb-metin{ margin:0; line-height:1.55; font-size:.97em; }
+.zb-merak{ background:#f3ecfb; border-left:6px solid #7c3aed; }
+.zb-merak .zb-baslik{ color:#7c3aed; }
+.zb-yanlis{ background:#fff0f0; border-left:6px solid #d62828; }
+.zb-yanlis .zb-baslik{ color:#d62828; }
+.zb-yanlis .zb-yanlis-satir{ color:#a31515; margin:4px 0; }
+.zb-yanlis .zb-dogru-satir{ color:#2d6a4f; margin:4px 0; font-weight:bold; }
+.zb-ornek{ background:#eafaf1; border-left:6px solid #40916c; }
+.zb-ornek .zb-baslik{ color:#40916c; }
+.zb-dusun{ background:#fff4e6; border-left:6px solid #f4a261; }
+.zb-dusun .zb-baslik{ color:#c9740b; }
+.zb-aile{ background:#fdeef5; border-left:6px solid #d6336c; }
+.zb-aile .zb-baslik{ color:#d6336c; }
+.zb-degerlendir{ background:#eaf2ff; border-left:6px solid #2a6f97; }
+.zb-degerlendir .zb-baslik{ color:#2a6f97; }
+.zb-degerlendir ul{ list-style:none; padding:0; margin:0; }
+.zb-degerlendir li{ display:flex; align-items:flex-start; gap:8px; margin:8px 0; font-size:.95em; line-height:1.4; }
+.zb-degerlendir input[type=checkbox]{ width:18px; height:18px; margin-top:2px; flex-shrink:0; accent-color:#2a6f97; cursor:pointer; }
+.zb-degerlendir label{ cursor:pointer; }
+
+/* ===================== 6 BOLUMLU ZENGINLESTIRME (Sunum slaytlari) ===================== */
+.s-zb{ color:#22333b; }
+.s-zb-merak{ background:#f3ecfb; }
+.s-zb-yanlis{ background:#fff0f0; }
+.s-zb-ornek{ background:#eafaf1; }
+.s-zb-dusun{ background:#fff4e6; }
+.s-zb-aile{ background:#fdeef5; }
+.s-zb-degerlendir{ background:#eaf2ff; }
+.zb-slayt-ust{ font-weight:bold; letter-spacing:1.5px; font-size:.95em; margin-bottom:14px; }
+.s-zb-merak .zb-slayt-ust{ color:#7c3aed; }
+.s-zb-yanlis .zb-slayt-ust{ color:#d62828; }
+.s-zb-ornek .zb-slayt-ust{ color:#40916c; }
+.s-zb-dusun .zb-slayt-ust{ color:#c9740b; }
+.s-zb-aile .zb-slayt-ust{ color:#d6336c; }
+.s-zb-degerlendir .zb-slayt-ust{ color:#2a6f97; }
+.zb-slayt-metin{ font-size:1.1em; line-height:1.5; max-width:640px; }
+.zb-slayt-yanlis{ color:#a31515; font-size:1em; margin:6px 0; }
+.zb-slayt-dogru{ color:#2d6a4f; font-size:1em; margin:6px 0; font-weight:bold; }
+.zb-slayt-liste{ list-style:none; padding:0; margin:0; text-align:left; max-width:600px; }
+.zb-slayt-liste li{ font-size:1em; margin:8px 0; }
+
 </style>
 </head>
 <body>
@@ -579,6 +624,11 @@
       <li>Putlara tapma, soyla övünme, adaletsizlik gibi olumsuz davranışların yaygın olduğu döneme Cahiliye Dönemi denir.</li><li>Mekke'de putperestlik (şirk, müşrik) yaygındı; tevhit inancını benimseyenlere hanif denirdi.</li><li>Halk göçebe (bedevi) ve yerleşik (hadari) olarak ikiye ayrılırdı; kabileler hâlinde yaşarlardı.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zb s-zb-merak" data-tip="zb">
+    <p class="zb-slayt-ust">🤔 MERAK ETTİN Mİ?</p>
+    <p class="zb-slayt-metin">Hilfülfudul, Mekke'de haksızlığa uğrayanlara yardım etmek için kurulan bir dayanışma topluluğuydu; Hz. Muhammed gençliğinde bu topluluğa katılmıştı.</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--yesil)">
     <h3>📌 Hz. Muhammed'in (sav) Doğduğu Çevre (3/3)</h3>
@@ -586,10 +636,12 @@
       <li>Yılın belli zamanlarında panayırlar kurulurdu.</li>
     </ul>
   </div>
-  <div class="sunum-slayt s-zg s-zg-bilgi" data-tip="zg">
-    <p class="zg-slayt-ust">💡 BİLGİ KUTUSU</p>
-    <p class="zg-slayt-metin">Hilfülfudul, Mekke'de haksızlığa uğrayanlara yardım etmek için kurulan bir dayanışma topluluğuydu; Hz. Muhammed gençliğinde bu topluluğa katılmıştı.</p>
+  <div class="sunum-slayt s-zb s-zb-yanlis" data-tip="zb">
+    <p class="zb-slayt-ust">❌ YANLIŞ BİLİNENLER</p>
+    <p class="zb-slayt-yanlis">❌ Bazıları Hz. Muhammed'in gençliğinin sıradan, örnek olmayan bir dönem olduğunu düşünür.</p>
+    <p class="zb-slayt-dogru">✅ Hz. Muhammed'in gençliği; dürüstlük, güvenilirlik ve toplumsal duyarlılıkla (Hilfülfudul gibi) dolu, peygamberliğe zemin hazırlayan bir dönemdi.</p>
   </div>
+
 
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--mavi)">
@@ -605,10 +657,11 @@
       <li>6-8 yaş: dedesi Abdülmuttalib'in yanında. 8-25 yaş: amcası Ebu Talib'in yanında; ticaret ve çobanlık yaptı.</li><li>İsimleri: Muhammed (övgüye değer), Ahmed, Mustafa (seçilmiş).</li>
     </ul>
   </div>
-  <div class="sunum-slayt s-zg s-zg-merak" data-tip="zg">
-    <p class="zg-slayt-ust">🤔 MERAK ETTİN Mİ?</p>
-    <p class="zg-slayt-metin">Kâbe'nin tamirinde Hacerülesved'i yerine kim koymuştur? Kabileler anlaşmazlığa düşünce, en güvenilir kişi olarak Hz. Muhammed hakemlik yapmış, taşı bir örtü üzerinde herkesle birlikte taşımıştır.</p>
+  <div class="sunum-slayt s-zb s-zb-ornek" data-tip="zb">
+    <p class="zb-slayt-ust">🌍 GERÇEK HAYATTAN BİR ÖRNEK</p>
+    <p class="zb-slayt-metin">Kâbe'nin tamirinde Hacerülesved'i yerine koyma meselesinde kabilelerin ona güvenip hakem seçmesi, gençliğindeki güvenilirliğinin somut kanıtıdır.</p>
   </div>
+
 
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--kirmizi)">
@@ -617,16 +670,17 @@
       <li>Dürüstlüğü ve güvenilirliğiyle tanınan Hz. Muhammed'e Mekke halkı "emin" (el-Emin) lakabını verdi.</li><li>Yemenli bir tüccarın malına haksızlık yapılması üzerine, haksızlığa uğrayanlara yardım için Hilfülfudul (erdemli insanların sözleşmesi) kuruldu; Hz.</li><li>Muhammed yirmili yaşlarında bu topluluğa katıldı.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zb s-zb-dusun" data-tip="zb">
+    <p class="zb-slayt-ust">💭 DÜŞÜN VE CEVAPLA</p>
+    <p class="zb-slayt-metin">Hz. Muhammed'in gençliğinde katıldığı Hilfülfudul gibi bir dayanışma topluluğu bugün nasıl bir örnek oluşturabilir?</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--kirmizi)">
     <h3>📌 Hz. Muhammed'in (sav) Gençlik Yılları (2/3)</h3>
     <ul class="si-liste">
       <li>Kâbe onarımında Hacerülesved'in (siyah taş) yerine konması konusunda kabileler anlaşamayınca Hz.</li><li>Muhammed hakem seçildi ve sorunu adaletle çözdü.</li><li>Zengin tüccar Hatice ile evlendi; altı çocukları oldu (Kasım, Zeyneb, Rukiye, Ümmü Gülsüm, Fatıma, Abdullah) — sadece Hz.</li>
     </ul>
-  </div>
-  <div class="sunum-slayt s-zg s-zg-soru" data-tip="zg">
-    <p class="zg-slayt-ust">❓ GÜNÜN SORUSU</p>
-    <p class="zg-slayt-metin">Hz. Muhammed'in gençliğindeki hangi davranışı seni en çok etkiledi?</p>
   </div>
 
 
@@ -636,6 +690,11 @@
       <li>Fatıma Peygamber hayattayken vefat etmedi. İlk çocuğu Kasım'ın adından künyesi "Ebülkasım" oldu.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zb s-zb-aile" data-tip="zb">
+    <p class="zb-slayt-ust">👨‍👩‍👧 AİLEMLE YAPIYORUM</p>
+    <p class="zb-slayt-metin">Ailenle birlikte çevrenizde haksızlığa uğrayan birine nasıl yardımcı olabileceğinizi konuşun ve küçük bir adım atın.</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--turkuaz)">
     <h3>📌 Bir Sure Öğreniyorum: Fil Suresi (1/2)</h3>
@@ -643,10 +702,16 @@
       <li>Fil suresi, fillerle donatılmış ordusuyla Kâbe'yi yıkmaya gelen Ebrehe'nin helak edilişini anlatır.</li><li>Yemen Valisi Ebrehe, Sana şehrinde bir kilise inşa ederek Mekke'nin ticaretine engel olmak istemiş, sonra Kâbe'yi yıkmaya karar vermiştir.</li><li>Filler Mekke'ye doğru ilerletilmek istendiğinde yerinden kımıldamamış; sürü sürü kuşlar balçıktan pişirilmiş taşlarla orduyu darmadağın etmiştir.</li>
     </ul>
   </div>
-  <div class="sunum-slayt s-zg s-zg-hayat" data-tip="zg">
-    <p class="zg-slayt-ust">🌍 GERÇEK HAYAT BAĞLANTISI</p>
-    <p class="zg-slayt-metin">Hz. Muhammed'in gençliğinde kazandığı güven ve dürüstlük, bugün de her yaşta kazanılabilecek bir değerdir.</p>
+  <div class="sunum-slayt s-zb s-zb-degerlendir" data-tip="zb">
+    <p class="zb-slayt-ust">✅ KENDİMİ DEĞERLENDİRİYORUM</p>
+    <ul class="zb-slayt-liste">
+      <li>☐ Hz. Muhammed'in doğduğu ortamı (Cahiliye Dönemi) anlatabilirim.</li>
+      <li>☐ Hilfülfudul'ün ne olduğunu açıklayabilirim.</li>
+      <li>☐ Kâbe'nin tarihini biliyorum.</li>
+      <li>☐ Hz. Muhammed'i örnek alarak toplumsal duyarlılık göstermeye çalışıyorum.</li>
+    </ul>
   </div>
+
 
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--turkuaz)">
@@ -721,10 +786,11 @@
     <p>Hz. Peygamber, Arap Yarımadası'nın <b>Hicaz</b> bölgesinde bulunan Mekke'de doğmuştur. Kur'an'a göre yeryüzündeki ilk mabet olan <b>Kâbe</b>, Mekke'dedir; Hz. Âdem tarafından yapıldığı, Hz. İbrahim ile oğlu Hz. İsmail tarafından yeniden inşa edildiği rivayet edilir.</p>
     <p>Putlara tapma, soyla övünme, adaletsizlik gibi olumsuz davranışların yaygın olduğu döneme <b>Cahiliye Dönemi</b> denir. Mekke'de putperestlik (<b>şirk</b>, <b>müşrik</b>) yaygındı; tevhit inancını benimseyenlere <b>hanif</b> denirdi. Halk göçebe (<b>bedevi</b>) ve yerleşik (<b>hadari</b>) olarak ikiye ayrılırdı; <b>kabile</b>ler hâlinde yaşarlardı. Yılın belli zamanlarında <b>panayır</b>lar kurulurdu.</p>
   </div>
-  <div class="zg-kutu zg-bilgi">
-    <p class="zg-baslik">💡 Bilgi Kutusu</p>
-    <p class="zg-metin">Hilfülfudul, Mekke'de haksızlığa uğrayanlara yardım etmek için kurulan bir dayanışma topluluğuydu; Hz. Muhammed gençliğinde bu topluluğa katılmıştı.</p>
+  <div class="zb-kutu zb-merak">
+    <p class="zb-baslik">🤔 Merak Ettin mi?</p>
+    <p class="zb-metin">Hilfülfudul, Mekke'de haksızlığa uğrayanlara yardım etmek için kurulan bir dayanışma topluluğuydu; Hz. Muhammed gençliğinde bu topluluğa katılmıştı.</p>
   </div>
+
 
 
   <div class="kutu-panel">
@@ -732,10 +798,16 @@
     <p>Dedesi <b>Abdülmuttalib</b>, Kureyş kabilesinin reisiydi. Babası Abdullah, doğumundan önce Medine'de vefat etti. Annesi <b>Amine</b>'dir. Hz. Muhammed, hicri Rebiyülevvel ayının 12'sinde, miladi 20 Nisan 571'de Mekke'de doğdu.</p>
     <p>0-4 yaş: sütannesi <b>Halime</b>'nin yanında (ilk sütannesi Süveybe). 4-6 yaş: annesi Amine'yle (annesi Ebva köyünde vefat etti). 6-8 yaş: dedesi Abdülmuttalib'in yanında. 8-25 yaş: amcası <b>Ebu Talib</b>'in yanında; ticaret ve çobanlık yaptı. İsimleri: Muhammed (övgüye değer), Ahmed, Mustafa (seçilmiş).</p>
   </div>
-  <div class="zg-kutu zg-merak">
-    <p class="zg-baslik">🤔 Merak Ettin mi?</p>
-    <p class="zg-metin">Kâbe'nin tamirinde Hacerülesved'i yerine kim koymuştur? Kabileler anlaşmazlığa düşünce, en güvenilir kişi olarak Hz. Muhammed hakemlik yapmış, taşı bir örtü üzerinde herkesle birlikte taşımıştır.</p>
+  <div class="zb-kutu zb-yanlis">
+    <p class="zb-baslik">❌ Yanlış Bilinenler</p>
+    <p class="zb-metin zb-yanlis-satir">❌ Bazıları Hz. Muhammed'in gençliğinin sıradan, örnek olmayan bir dönem olduğunu düşünür.</p>
+    <p class="zb-metin zb-dogru-satir">✅ Hz. Muhammed'in gençliği; dürüstlük, güvenilirlik ve toplumsal duyarlılıkla (Hilfülfudul gibi) dolu, peygamberliğe zemin hazırlayan bir dönemdi.</p>
   </div>
+  <div class="zb-kutu zb-ornek">
+    <p class="zb-baslik">🌍 Gerçek Hayattan Bir Örnek</p>
+    <p class="zb-metin">Kâbe'nin tamirinde Hacerülesved'i yerine koyma meselesinde kabilelerin ona güvenip hakem seçmesi, gençliğindeki güvenilirliğinin somut kanıtıdır.</p>
+  </div>
+
 
 
   <div class="kutu-panel">
@@ -743,10 +815,15 @@
     <p>Dürüstlüğü ve güvenilirliğiyle tanınan Hz. Muhammed'e Mekke halkı "<b>emin</b>" (el-Emin) lakabını verdi. Yemenli bir tüccarın malına haksızlık yapılması üzerine, haksızlığa uğrayanlara yardım için <b>Hilfülfudul</b> (erdemli insanların sözleşmesi) kuruldu; Hz. Muhammed yirmili yaşlarında bu topluluğa katıldı.</p>
     <p>Kâbe onarımında <b>Hacerülesved</b>'in (siyah taş) yerine konması konusunda kabileler anlaşamayınca Hz. Muhammed hakem seçildi ve sorunu adaletle çözdü. Zengin tüccar <b>Hatice</b> ile evlendi; altı çocukları oldu (Kasım, Zeyneb, Rukiye, Ümmü Gülsüm, Fatıma, Abdullah) — sadece Hz. Fatıma Peygamber hayattayken vefat etmedi. İlk çocuğu <b>Kasım</b>'ın adından künyesi "Ebülkasım" oldu.</p>
   </div>
-  <div class="zg-kutu zg-soru">
-    <p class="zg-baslik">❓ Günün Sorusu</p>
-    <p class="zg-metin">Hz. Muhammed'in gençliğindeki hangi davranışı seni en çok etkiledi?</p>
+  <div class="zb-kutu zb-dusun">
+    <p class="zb-baslik">💭 Düşün ve Cevapla</p>
+    <p class="zb-metin">Hz. Muhammed'in gençliğinde katıldığı Hilfülfudul gibi bir dayanışma topluluğu bugün nasıl bir örnek oluşturabilir?</p>
   </div>
+  <div class="zb-kutu zb-aile">
+    <p class="zb-baslik">👨‍👩‍👧 Ailemle Yapıyorum</p>
+    <p class="zb-metin">Ailenle birlikte çevrenizde haksızlığa uğrayan birine nasıl yardımcı olabileceğinizi konuşun ve küçük bir adım atın.</p>
+  </div>
+
 
 
   <div class="kutu-panel">
@@ -761,10 +838,16 @@
       <tr><td style="padding:6px;">Fecealehüm keasfim me'kûl</td><td style="padding:6px;">Nihayet onları yenilmiş ekin yaprakları hâline getirdi.</td></tr>
     </table>
   </div>
-  <div class="zg-kutu zg-hayat">
-    <p class="zg-baslik">🌍 Gerçek Hayat Bağlantısı</p>
-    <p class="zg-metin">Hz. Muhammed'in gençliğinde kazandığı güven ve dürüstlük, bugün de her yaşta kazanılabilecek bir değerdir.</p>
+  <div class="zb-kutu zb-degerlendir">
+    <p class="zb-baslik">✅ Kendimi Değerlendiriyorum</p>
+    <ul>
+      <li><input type="checkbox" id="deg_6-4_0" onchange="degKaydet('6-4')"><label for="deg_6-4_0">Hz. Muhammed'in doğduğu ortamı (Cahiliye Dönemi) anlatabilirim.</label></li>
+      <li><input type="checkbox" id="deg_6-4_1" onchange="degKaydet('6-4')"><label for="deg_6-4_1">Hilfülfudul'ün ne olduğunu açıklayabilirim.</label></li>
+      <li><input type="checkbox" id="deg_6-4_2" onchange="degKaydet('6-4')"><label for="deg_6-4_2">Kâbe'nin tarihini biliyorum.</label></li>
+      <li><input type="checkbox" id="deg_6-4_3" onchange="degKaydet('6-4')"><label for="deg_6-4_3">Hz. Muhammed'i örnek alarak toplumsal duyarlılık göstermeye çalışıyorum.</label></li>
+    </ul>
   </div>
+
 
 </section>
 
@@ -3211,6 +3294,27 @@ function ozelOnay(mesaj, callback){
   btnler[0].onclick = ()=>{ arka.remove(); callback(true); };
   btnler[1].onclick = ()=>{ arka.remove(); callback(false); };
 }
+
+
+// ===================== KENDIMI DEGERLENDIRIYORUM - CHECKBOX KAYDI =====================
+function degOku(uniteKimlik){
+  try{ return JSON.parse(localStorage.getItem('dkabDegerlendirme_'+uniteKimlik)) || {}; }catch(e){ return {}; }
+}
+function degKaydet(uniteKimlik){
+  const durum = {};
+  document.querySelectorAll('[id^="deg_'+uniteKimlik+'_"]').forEach(cb=>{ durum[cb.id] = cb.checked; });
+  try{ localStorage.setItem('dkabDegerlendirme_'+uniteKimlik, JSON.stringify(durum)); }catch(e){}
+}
+function degYukle(uniteKimlik){
+  const durum = degOku(uniteKimlik);
+  Object.keys(durum).forEach(id=>{
+    const cb = document.getElementById(id);
+    if(cb) cb.checked = durum[id];
+  });
+}
+document.addEventListener('DOMContentLoaded', function(){
+  if(typeof UNITE_KIMLIK !== 'undefined') degYukle(UNITE_KIMLIK);
+});
 
 </script>
 </body>
