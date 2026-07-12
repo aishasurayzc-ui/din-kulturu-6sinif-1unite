@@ -359,6 +359,33 @@
   .sb-baslik{ font-size:1.25em; } .sa-meal{ font-size:1em; } .sl-liste li,.si-liste li{ font-size:.85em; }
 }
 
+
+/* ===================== ZENGINLESTIRME KUTULARI ===================== */
+.zg-kutu{ border-radius:12px; padding:16px 18px; margin:16px 0; box-shadow:0 3px 10px rgba(0,0,0,.08); }
+.zg-baslik{ font-weight:bold; font-size:1.05em; margin:0 0 8px; display:flex; align-items:center; gap:8px; }
+.zg-metin{ margin:0; line-height:1.55; font-size:.97em; }
+.zg-bilgi{ background:#eaf2ff; border-left:6px solid #2a6f97; }
+.zg-bilgi .zg-baslik{ color:#2a6f97; }
+.zg-merak{ background:#f3ecfb; border-left:6px solid #7c3aed; }
+.zg-merak .zg-baslik{ color:#7c3aed; }
+.zg-soru{ background:#fff4e6; border-left:6px solid #f4a261; }
+.zg-soru .zg-baslik{ color:#c9740b; }
+.zg-hayat{ background:#eafaf1; border-left:6px solid #40916c; }
+.zg-hayat .zg-baslik{ color:#40916c; }
+
+
+.s-zg{ color:#22333b; }
+.s-zg-bilgi{ background:#eaf2ff; }
+.s-zg-merak{ background:#f3ecfb; }
+.s-zg-soru{ background:#fff4e6; }
+.s-zg-hayat{ background:#eafaf1; }
+.zg-slayt-ust{ font-weight:bold; letter-spacing:1.5px; font-size:.95em; margin-bottom:14px; }
+.s-zg-bilgi .zg-slayt-ust{ color:#2a6f97; }
+.s-zg-merak .zg-slayt-ust{ color:#7c3aed; }
+.s-zg-soru .zg-slayt-ust{ color:#c9740b; }
+.s-zg-hayat .zg-slayt-ust{ color:#40916c; }
+.zg-slayt-metin{ font-size:1.15em; line-height:1.55; max-width:640px; }
+
 </style>
 </head>
 <body>
@@ -487,6 +514,11 @@
       <li>Yılın belli zamanlarında panayırlar kurulurdu.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zg s-zg-bilgi" data-tip="zg">
+    <p class="zg-slayt-ust">💡 BİLGİ KUTUSU</p>
+    <p class="zg-slayt-metin">Hilfülfudul, Mekke'de haksızlığa uğrayanlara yardım etmek için kurulan bir dayanışma topluluğuydu; Hz. Muhammed gençliğinde bu topluluğa katılmıştı.</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--mavi)">
     <h3>📌 Hz. Muhammed'in (sav) Ailesi ve Çocukluğu (1/2)</h3>
@@ -501,6 +533,11 @@
       <li>6-8 yaş: dedesi Abdülmuttalib'in yanında. 8-25 yaş: amcası Ebu Talib'in yanında; ticaret ve çobanlık yaptı.</li><li>İsimleri: Muhammed (övgüye değer), Ahmed, Mustafa (seçilmiş).</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zg s-zg-merak" data-tip="zg">
+    <p class="zg-slayt-ust">🤔 MERAK ETTİN Mİ?</p>
+    <p class="zg-slayt-metin">Kâbe'nin tamirinde Hacerülesved'i yerine kim koymuştur? Kabileler anlaşmazlığa düşünce, en güvenilir kişi olarak Hz. Muhammed hakemlik yapmış, taşı bir örtü üzerinde herkesle birlikte taşımıştır.</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--kirmizi)">
     <h3>📌 Hz. Muhammed'in (sav) Gençlik Yılları (1/3)</h3>
@@ -515,6 +552,11 @@
       <li>Kâbe onarımında Hacerülesved'in (siyah taş) yerine konması konusunda kabileler anlaşamayınca Hz.</li><li>Muhammed hakem seçildi ve sorunu adaletle çözdü.</li><li>Zengin tüccar Hatice ile evlendi; altı çocukları oldu (Kasım, Zeyneb, Rukiye, Ümmü Gülsüm, Fatıma, Abdullah) — sadece Hz.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zg s-zg-soru" data-tip="zg">
+    <p class="zg-slayt-ust">❓ GÜNÜN SORUSU</p>
+    <p class="zg-slayt-metin">Hz. Muhammed'in gençliğindeki hangi davranışı seni en çok etkiledi?</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--kirmizi)">
     <h3>📌 Hz. Muhammed'in (sav) Gençlik Yılları (3/3)</h3>
@@ -529,6 +571,11 @@
       <li>Fil suresi, fillerle donatılmış ordusuyla Kâbe'yi yıkmaya gelen Ebrehe'nin helak edilişini anlatır.</li><li>Yemen Valisi Ebrehe, Sana şehrinde bir kilise inşa ederek Mekke'nin ticaretine engel olmak istemiş, sonra Kâbe'yi yıkmaya karar vermiştir.</li><li>Filler Mekke'ye doğru ilerletilmek istendiğinde yerinden kımıldamamış; sürü sürü kuşlar balçıktan pişirilmiş taşlarla orduyu darmadağın etmiştir.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zg s-zg-hayat" data-tip="zg">
+    <p class="zg-slayt-ust">🌍 GERÇEK HAYAT BAĞLANTISI</p>
+    <p class="zg-slayt-metin">Hz. Muhammed'in gençliğinde kazandığı güven ve dürüstlük, bugün de her yaşta kazanılabilecek bir değerdir.</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--turkuaz)">
     <h3>📌 Bir Sure Öğreniyorum: Fil Suresi (2/2)</h3>
@@ -577,7 +624,6 @@
       <li>Hz. Muhammed'in (sav) Doğduğu Çevre</li><li>Hz. Muhammed'in (sav) Ailesi ve Çocukluğu</li><li>Hz. Muhammed'in (sav) Gençlik Yılları</li><li>Bir Sure Öğreniyorum: Fil Suresi</li>
     </ul>
   </div>
-
   <div class="sunum-slayt s-kapanis" data-tip="kapanis">
     <div class="sb-daire">🌟</div>
     <h2 class="sb-baslik">Dinlediğiniz İçin Teşekkürler</h2>
@@ -603,18 +649,33 @@
     <p>Hz. Peygamber, Arap Yarımadası'nın <b>Hicaz</b> bölgesinde bulunan Mekke'de doğmuştur. Kur'an'a göre yeryüzündeki ilk mabet olan <b>Kâbe</b>, Mekke'dedir; Hz. Âdem tarafından yapıldığı, Hz. İbrahim ile oğlu Hz. İsmail tarafından yeniden inşa edildiği rivayet edilir.</p>
     <p>Putlara tapma, soyla övünme, adaletsizlik gibi olumsuz davranışların yaygın olduğu döneme <b>Cahiliye Dönemi</b> denir. Mekke'de putperestlik (<b>şirk</b>, <b>müşrik</b>) yaygındı; tevhit inancını benimseyenlere <b>hanif</b> denirdi. Halk göçebe (<b>bedevi</b>) ve yerleşik (<b>hadari</b>) olarak ikiye ayrılırdı; <b>kabile</b>ler hâlinde yaşarlardı. Yılın belli zamanlarında <b>panayır</b>lar kurulurdu.</p>
   </div>
+  <div class="zg-kutu zg-bilgi">
+    <p class="zg-baslik">💡 Bilgi Kutusu</p>
+    <p class="zg-metin">Hilfülfudul, Mekke'de haksızlığa uğrayanlara yardım etmek için kurulan bir dayanışma topluluğuydu; Hz. Muhammed gençliğinde bu topluluğa katılmıştı.</p>
+  </div>
+
 
   <div class="kutu-panel">
     <h3 style="color:var(--mavi)">2️⃣ Hz. Muhammed'in (sav) Ailesi ve Çocukluğu</h3>
     <p>Dedesi <b>Abdülmuttalib</b>, Kureyş kabilesinin reisiydi. Babası Abdullah, doğumundan önce Medine'de vefat etti. Annesi <b>Amine</b>'dir. Hz. Muhammed, hicri Rebiyülevvel ayının 12'sinde, miladi 20 Nisan 571'de Mekke'de doğdu.</p>
     <p>0-4 yaş: sütannesi <b>Halime</b>'nin yanında (ilk sütannesi Süveybe). 4-6 yaş: annesi Amine'yle (annesi Ebva köyünde vefat etti). 6-8 yaş: dedesi Abdülmuttalib'in yanında. 8-25 yaş: amcası <b>Ebu Talib</b>'in yanında; ticaret ve çobanlık yaptı. İsimleri: Muhammed (övgüye değer), Ahmed, Mustafa (seçilmiş).</p>
   </div>
+  <div class="zg-kutu zg-merak">
+    <p class="zg-baslik">🤔 Merak Ettin mi?</p>
+    <p class="zg-metin">Kâbe'nin tamirinde Hacerülesved'i yerine kim koymuştur? Kabileler anlaşmazlığa düşünce, en güvenilir kişi olarak Hz. Muhammed hakemlik yapmış, taşı bir örtü üzerinde herkesle birlikte taşımıştır.</p>
+  </div>
+
 
   <div class="kutu-panel">
     <h3 style="color:var(--mavi)">3️⃣ Hz. Muhammed'in (sav) Gençlik Yılları</h3>
     <p>Dürüstlüğü ve güvenilirliğiyle tanınan Hz. Muhammed'e Mekke halkı "<b>emin</b>" (el-Emin) lakabını verdi. Yemenli bir tüccarın malına haksızlık yapılması üzerine, haksızlığa uğrayanlara yardım için <b>Hilfülfudul</b> (erdemli insanların sözleşmesi) kuruldu; Hz. Muhammed yirmili yaşlarında bu topluluğa katıldı.</p>
     <p>Kâbe onarımında <b>Hacerülesved</b>'in (siyah taş) yerine konması konusunda kabileler anlaşamayınca Hz. Muhammed hakem seçildi ve sorunu adaletle çözdü. Zengin tüccar <b>Hatice</b> ile evlendi; altı çocukları oldu (Kasım, Zeyneb, Rukiye, Ümmü Gülsüm, Fatıma, Abdullah) — sadece Hz. Fatıma Peygamber hayattayken vefat etmedi. İlk çocuğu <b>Kasım</b>'ın adından künyesi "Ebülkasım" oldu.</p>
   </div>
+  <div class="zg-kutu zg-soru">
+    <p class="zg-baslik">❓ Günün Sorusu</p>
+    <p class="zg-metin">Hz. Muhammed'in gençliğindeki hangi davranışı seni en çok etkiledi?</p>
+  </div>
+
 
   <div class="kutu-panel">
     <h3 style="color:var(--mavi)">4️⃣ Bir Sure Öğreniyorum: Fil Suresi</h3>
@@ -628,6 +689,11 @@
       <tr><td style="padding:6px;">Fecealehüm keasfim me'kûl</td><td style="padding:6px;">Nihayet onları yenilmiş ekin yaprakları hâline getirdi.</td></tr>
     </table>
   </div>
+  <div class="zg-kutu zg-hayat">
+    <p class="zg-baslik">🌍 Gerçek Hayat Bağlantısı</p>
+    <p class="zg-metin">Hz. Muhammed'in gençliğinde kazandığı güven ve dürüstlük, bugün de her yaşta kazanılabilecek bir değerdir.</p>
+  </div>
+
 </section>
 
 <!-- KONU TEKRARI TESTİ -->

@@ -359,6 +359,33 @@
   .sb-baslik{ font-size:1.25em; } .sa-meal{ font-size:1em; } .sl-liste li,.si-liste li{ font-size:.85em; }
 }
 
+
+/* ===================== ZENGINLESTIRME KUTULARI ===================== */
+.zg-kutu{ border-radius:12px; padding:16px 18px; margin:16px 0; box-shadow:0 3px 10px rgba(0,0,0,.08); }
+.zg-baslik{ font-weight:bold; font-size:1.05em; margin:0 0 8px; display:flex; align-items:center; gap:8px; }
+.zg-metin{ margin:0; line-height:1.55; font-size:.97em; }
+.zg-bilgi{ background:#eaf2ff; border-left:6px solid #2a6f97; }
+.zg-bilgi .zg-baslik{ color:#2a6f97; }
+.zg-merak{ background:#f3ecfb; border-left:6px solid #7c3aed; }
+.zg-merak .zg-baslik{ color:#7c3aed; }
+.zg-soru{ background:#fff4e6; border-left:6px solid #f4a261; }
+.zg-soru .zg-baslik{ color:#c9740b; }
+.zg-hayat{ background:#eafaf1; border-left:6px solid #40916c; }
+.zg-hayat .zg-baslik{ color:#40916c; }
+
+
+.s-zg{ color:#22333b; }
+.s-zg-bilgi{ background:#eaf2ff; }
+.s-zg-merak{ background:#f3ecfb; }
+.s-zg-soru{ background:#fff4e6; }
+.s-zg-hayat{ background:#eafaf1; }
+.zg-slayt-ust{ font-weight:bold; letter-spacing:1.5px; font-size:.95em; margin-bottom:14px; }
+.s-zg-bilgi .zg-slayt-ust{ color:#2a6f97; }
+.s-zg-merak .zg-slayt-ust{ color:#7c3aed; }
+.s-zg-soru .zg-slayt-ust{ color:#c9740b; }
+.s-zg-hayat .zg-slayt-ust{ color:#40916c; }
+.zg-slayt-metin{ font-size:1.15em; line-height:1.55; max-width:640px; }
+
 </style>
 </head>
 <body>
@@ -480,6 +507,11 @@
       <li>Yalan söylemek insanlar arasında düşmanlık ve güvensizliğe yol açar. Hz.</li><li>Peygamber peygamberlikten önce "el-Emin" lakabıyla anılmıştır ve şakayla bile yalan söylememiştir.</li><li>Doğruluk peygamberlerin temel özelliklerindendir.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zg s-zg-bilgi" data-tip="zg">
+    <p class="zg-slayt-ust">💡 BİLGİ KUTUSU</p>
+    <p class="zg-slayt-metin">Vitir namazının son rekâtında okunan kunut duaları, Allah'tan yardım ve bağışlanma dilemek için okunur.</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--mavi)">
     <h3>📌 Merhametli Olmak (1/2)</h3>
@@ -487,6 +519,11 @@
       <li>Merhamet; şefkat gösterme, acıma, yumuşak huylu olma, affetme ve bağışlama şeklinde tanımlanır.</li><li>İlişkili kavramlar sevgi, şefkat ve vicdandır.</li><li>Allah'ın rahmetini ifade eden isimlerin başında Rahman (bütün varlıklara merhamet) ve Rahim (ahirette sadece inananlara merhamet) gelir.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zg s-zg-merak" data-tip="zg">
+    <p class="zg-slayt-ust">🤔 MERAK ETTİN Mİ?</p>
+    <p class="zg-slayt-metin">15 Temmuz'da Ömer Halisdemir'in kahramanlığı neden önemlidir? Vatan sevgisi ve fedakârlığın en güçlü örneklerinden biridir.</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--mavi)">
     <h3>📌 Merhametli Olmak (2/2)</h3>
@@ -501,6 +538,11 @@
       <li>Adap, edep kelimesinin çoğuludur; bir toplumda örf, âdet, kural hâlini almış iyi ve güzel davranışlardır.</li><li>Nezaket, insanlara kibar ve saygılı davranmaktır.</li><li>Üç ana başlık: Selamlaşma adabı (Selam: iyi niyet, saygı ve sevgi dileme duası; "Selamünaleyküm" ortak sözdür), İletişim ve konuşma adabı (doğru sözlü olmak, açık konuşmak, kırıcı olmamak; sosyal medyada mahremiyete…</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zg s-zg-soru" data-tip="zg">
+    <p class="zg-slayt-ust">❓ GÜNÜN SORUSU</p>
+    <p class="zg-slayt-metin">Bugün doğruluk ve dürüstlük konusunda nasıl bir örnek oldun?</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--turkuaz)">
     <h3>📌 Vatanımızı Sevmek</h3>
@@ -508,6 +550,11 @@
       <li>Vatan, belli bir topluluğun ve milletin hâkim güç olarak yaşadığı, sınırları belli toprak parçasıdır.</li><li>Millet, aynı topraklarda yaşayan, din, dil, tarih, ülkü, gelenek birliği olan insan topluluğudur.</li><li>Allah yolunda veya vatan, namus, mal ve can güvenliği için savaşırken öldürülen mümine şehit, savaşıp sağ dönen kişiye gazi denir.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zg s-zg-hayat" data-tip="zg">
+    <p class="zg-slayt-ust">🌍 GERÇEK HAYAT BAĞLANTISI</p>
+    <p class="zg-slayt-metin">Vatan sevgisi sadece savaş zamanında değil, günlük hayatta kurallara uymak, çevreyi korumak gibi küçük davranışlarla da gösterilir.</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:#7c3aed">
     <h3>📌 Bir Dua Öğreniyorum: Kunut Duaları</h3>
@@ -556,7 +603,6 @@
       <li>Çanakkale Savaşı ve Kurtuluş Savaşı vatan mücadelesinin örnekleridir.</li><li>14 Ağustos 1974'te Kıbrıs Barış Harekâtı gerçekleştirilmiş, Türk ordusu 498, Kıbrıs Türkleri 1672 şehit vermiştir.</li><li>15 Temmuz 2016'daki darbe girişimi millî birlikle önlenmiş, Ömer Halisdemir bu uğurda şehit olmuştur.</li><li>Vatan bağımsızlığı, milletin kendi topraklarında karar verme gücü olan egemenlik ile korunur.</li>
     </ul>
   </div>
-
   <div class="sunum-slayt s-kapanis" data-tip="kapanis">
     <div class="sb-daire">🌟</div>
     <h2 class="sb-baslik">Dinlediğiniz İçin Teşekkürler</h2>
@@ -588,23 +634,43 @@
     <p><b>Merhamet</b>; şefkat gösterme, acıma, yumuşak huylu olma, affetme ve bağışlama şeklinde tanımlanır. İlişkili kavramlar sevgi, <b>şefkat</b> ve <b>vicdan</b>dır. Allah'ın rahmetini ifade eden isimlerin başında <b>Rahman</b> (bütün varlıklara merhamet) ve <b>Rahim</b> (ahirette sadece inananlara merhamet) gelir.</p>
     <p>Hz. Muhammed (sav) "âlemlere rahmet olarak" gönderilmiştir. Merhametli insanlar kin, kibir, kıskançlık ve nefretten uzak durur; "Karıncayı bile incitmez." ifadesiyle anılır.</p>
   </div>
+  <div class="zg-kutu zg-bilgi">
+    <p class="zg-baslik">💡 Bilgi Kutusu</p>
+    <p class="zg-metin">Vitir namazının son rekâtında okunan kunut duaları, Allah'tan yardım ve bağışlanma dilemek için okunur.</p>
+  </div>
+
 
   <div class="kutu-panel">
     <h3 style="color:var(--mavi)">3️⃣ Adap ve Nezaket Kurallarına Uymak</h3>
     <p><b>Adap</b>, edep kelimesinin çoğuludur; bir toplumda örf, âdet, kural hâlini almış iyi ve güzel davranışlardır. <b>Nezaket</b>, insanlara kibar ve saygılı davranmaktır. Üç ana başlık: <b>Selamlaşma adabı</b> (Selam: iyi niyet, saygı ve sevgi dileme duası; "Selamünaleyküm" ortak sözdür), <b>İletişim ve konuşma adabı</b> (doğru sözlü olmak, açık konuşmak, kırıcı olmamak; sosyal medyada mahremiyete dikkat), <b>Sofra adabı</b> (<b>besmele</b> ile başlamak, sağ elle ve önden yemek, el yıkamak, <b>israf</b>tan kaçınmak, teşekkür etmek).</p>
   </div>
+  <div class="zg-kutu zg-merak">
+    <p class="zg-baslik">🤔 Merak Ettin mi?</p>
+    <p class="zg-metin">15 Temmuz'da Ömer Halisdemir'in kahramanlığı neden önemlidir? Vatan sevgisi ve fedakârlığın en güçlü örneklerinden biridir.</p>
+  </div>
+
 
   <div class="kutu-panel">
     <h3 style="color:var(--mavi)">4️⃣ Vatanımızı Sevmek</h3>
     <p><b>Vatan</b>, belli bir topluluğun ve milletin hâkim güç olarak yaşadığı, sınırları belli toprak parçasıdır. <b>Millet</b>, aynı topraklarda yaşayan, din, dil, tarih, ülkü, gelenek birliği olan insan topluluğudur. Allah yolunda veya vatan, namus, mal ve can güvenliği için savaşırken öldürülen mümine <b>şehit</b>, savaşıp sağ dönen kişiye <b>gazi</b> denir.</p>
     <div class="aciklama">Çanakkale Savaşı ve Kurtuluş Savaşı vatan mücadelesinin örnekleridir. 14 Ağustos 1974'te Kıbrıs Barış <b>Harekâtı</b> gerçekleştirilmiş, Türk ordusu 498, Kıbrıs Türkleri 1672 şehit vermiştir. 15 Temmuz 2016'daki <b>darbe</b> girişimi millî birlikle önlenmiş, Ömer Halisdemir bu uğurda şehit olmuştur. Vatan bağımsızlığı, milletin kendi topraklarında karar verme gücü olan <b>egemenlik</b> ile korunur.</div>
   </div>
+  <div class="zg-kutu zg-soru">
+    <p class="zg-baslik">❓ Günün Sorusu</p>
+    <p class="zg-metin">Bugün doğruluk ve dürüstlük konusunda nasıl bir örnek oldun?</p>
+  </div>
+
 
   <div class="kutu-panel">
     <h3 style="color:var(--mavi)">5️⃣ Bir Dua Öğreniyorum: Kunut Duaları</h3>
     <p><b>Kunut</b>, sözlükte "itaat etmek, ibadet etmek ve ayakta durmak", terim olarak namazda Allah'a sığınmak ve dua etmek anlamına gelir. Kunut duaları, yatsı namazının ardından kılınan <b>vitir</b> namazının son rekâtında okunur; zor durumlarda, salgın hastalıklarda ve doğal afetlerde de okunduğu rivayet edilir.</p>
     <div class="aciklama">1. Kunut duasında Allah'tan yardım, bağışlanma ve hidayet istenir; O'na inanılır, <b>tevekkül</b> edilir (güvenilir). 2. Kunut duasında ise "Biz yalnız sana kulluk ederiz, namazı yalnız senin için kılarız..." denilerek ibadetin yalnız Allah'a yapıldığı vurgulanır.</div>
   </div>
+  <div class="zg-kutu zg-hayat">
+    <p class="zg-baslik">🌍 Gerçek Hayat Bağlantısı</p>
+    <p class="zg-metin">Vatan sevgisi sadece savaş zamanında değil, günlük hayatta kurallara uymak, çevreyi korumak gibi küçük davranışlarla da gösterilir.</p>
+  </div>
+
 </section>
 
 <!-- KONU TEKRARI TESTİ -->

@@ -359,6 +359,33 @@
   .sb-baslik{ font-size:1.25em; } .sa-meal{ font-size:1em; } .sl-liste li,.si-liste li{ font-size:.85em; }
 }
 
+
+/* ===================== ZENGINLESTIRME KUTULARI ===================== */
+.zg-kutu{ border-radius:12px; padding:16px 18px; margin:16px 0; box-shadow:0 3px 10px rgba(0,0,0,.08); }
+.zg-baslik{ font-weight:bold; font-size:1.05em; margin:0 0 8px; display:flex; align-items:center; gap:8px; }
+.zg-metin{ margin:0; line-height:1.55; font-size:.97em; }
+.zg-bilgi{ background:#eaf2ff; border-left:6px solid #2a6f97; }
+.zg-bilgi .zg-baslik{ color:#2a6f97; }
+.zg-merak{ background:#f3ecfb; border-left:6px solid #7c3aed; }
+.zg-merak .zg-baslik{ color:#7c3aed; }
+.zg-soru{ background:#fff4e6; border-left:6px solid #f4a261; }
+.zg-soru .zg-baslik{ color:#c9740b; }
+.zg-hayat{ background:#eafaf1; border-left:6px solid #40916c; }
+.zg-hayat .zg-baslik{ color:#40916c; }
+
+
+.s-zg{ color:#22333b; }
+.s-zg-bilgi{ background:#eaf2ff; }
+.s-zg-merak{ background:#f3ecfb; }
+.s-zg-soru{ background:#fff4e6; }
+.s-zg-hayat{ background:#eafaf1; }
+.zg-slayt-ust{ font-weight:bold; letter-spacing:1.5px; font-size:.95em; margin-bottom:14px; }
+.s-zg-bilgi .zg-slayt-ust{ color:#2a6f97; }
+.s-zg-merak .zg-slayt-ust{ color:#7c3aed; }
+.s-zg-soru .zg-slayt-ust{ color:#c9740b; }
+.s-zg-hayat .zg-slayt-ust{ color:#40916c; }
+.zg-slayt-metin{ font-size:1.15em; line-height:1.55; max-width:640px; }
+
 </style>
 </head>
 <body>
@@ -480,6 +507,11 @@
       <li>Kur'an-ı Kerim'in indirilmeye başlandığı Kadir Gecesi de bu aydadır; Kadir Gecesi bin aydan daha hayırlıdır. Hz.</li><li>Peygamber, inanarak ve karşılığını Allah'tan bekleyerek Kadir Gecesi'ni ibadetle geçirenlerin geçmiş günahlarının affedileceğini müjdelemiştir.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zg s-zg-bilgi" data-tip="zg">
+    <p class="zg-slayt-ust">💡 BİLGİ KUTUSU</p>
+    <p class="zg-slayt-metin">Kadir Gecesi, Kur'an'a göre "bin aydan daha hayırlı" bir gecedir ve Kur'an'ın indirilmeye başlandığı gecedir.</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--mavi)">
     <h3>📌 Oruç İbadeti (1/3)</h3>
@@ -487,6 +519,11 @@
       <li>Sahur: Oruç tutmak için imsaktan önce yenilen yemek vaktidir. İmsak: Oruca başlama vaktidir.</li><li>İftar: Oruç tutan kimsenin akşam ezanı vaktinde yiyip içmeye başlamasıdır.</li><li>Teravih: Ramazanda yatsı namazından sonra kılınan (genellikle yirmi rekât) sünnet namazdır.</li><li>Mukabele: Bir kişinin Kur'an okuması, diğerlerinin takip etmesidir.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zg s-zg-merak" data-tip="zg">
+    <p class="zg-slayt-ust">🤔 MERAK ETTİN Mİ?</p>
+    <p class="zg-slayt-metin">Oruç tutmak neden sadece aç kalmak değildir? Çünkü Peygamberimiz, yalandan ve kötü sözden kaçınmayanın orucunun sadece açlık-susuzluktan ibaret kalacağını söylemiştir.</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--mavi)">
     <h3>📌 Oruç İbadeti (2/3)</h3>
@@ -501,6 +538,11 @@
       <li>Orucu bozmayan durumlar: unutarak yiyip içmek, banyo yapmak, koku sürmek, ağız çalkalamak.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zg s-zg-soru" data-tip="zg">
+    <p class="zg-slayt-ust">❓ GÜNÜN SORUSU</p>
+    <p class="zg-slayt-metin">Oruç tutan birine nasıl destek olabilirsin?</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--kirmizi)">
     <h3>📌 Oruç İbadetinin İnsana Kazandırdıkları</h3>
@@ -508,6 +550,11 @@
       <li>Oruç; sabır, yardımseverlik, cömertlik, dayanışma ve şükür gibi ahlaki değerleri kazandırır. Hz.</li><li>Peygamber "Oruç sabrın yarısıdır." buyurmuştur. Oruç, hücrelerin yenilenmesine katkı sağlayarak sağlık açısından da faydalıdır.</li><li>Ramazanda okunan mukabeleler, kılınan teravih namazları ve edilen tövbeler insanı manevi yönden temizler.</li>
     </ul>
   </div>
+  <div class="sunum-slayt s-zg s-zg-hayat" data-tip="zg">
+    <p class="zg-slayt-ust">🌍 GERÇEK HAYAT BAĞLANTISI</p>
+    <p class="zg-slayt-metin">Ramazanda paylaşma ve yardımlaşma (fitre, iftar sofraları) toplumsal dayanışmayı güçlendirir; bunu yıl boyu da uygulayabiliriz.</p>
+  </div>
+
 
   <div class="sunum-slayt s-icerik" data-tip="icerik" style="--vurgu:var(--turkuaz)">
     <h3>📌 Bir Dua Öğreniyorum: İftar Duası</h3>
@@ -556,7 +603,6 @@
       <li>Muhammed (sav), ashabıyla ramazan ayında Kur'an-ı Kerim'i daha fazla okumuştur; kendisi ve Cebrail (as) o zamana kadar inen ayetleri karşılıklı okumuşlardır.</li><li>Bu nedenle ramazana hem oruç hem Kur'an ayı denir.</li>
     </ul>
   </div>
-
   <div class="sunum-slayt s-kapanis" data-tip="kapanis">
     <div class="sb-daire">🌟</div>
     <h2 class="sb-baslik">Dinlediğiniz İçin Teşekkürler</h2>
@@ -583,6 +629,11 @@
     <p><b>Ramazan</b>, hicri takvimin dokuzuncu ayıdır. Bu ayda oruç tutmak farzdır. Kur'an-ı Kerim'in indirilmeye başlandığı <b>Kadir Gecesi</b> de bu aydadır; Kadir Gecesi bin aydan daha hayırlıdır. Hz. Peygamber, inanarak ve karşılığını Allah'tan bekleyerek Kadir Gecesi'ni ibadetle geçirenlerin geçmiş günahlarının affedileceğini müjdelemiştir.</p>
     <div class="aciklama">Hz. Muhammed (sav), ashabıyla ramazan ayında Kur'an-ı Kerim'i daha fazla okumuştur; kendisi ve <b>Cebrail</b> (as) o zamana kadar inen ayetleri karşılıklı okumuşlardır. Bu nedenle ramazana hem oruç hem Kur'an ayı denir.</div>
   </div>
+  <div class="zg-kutu zg-bilgi">
+    <p class="zg-baslik">💡 Bilgi Kutusu</p>
+    <p class="zg-metin">Kadir Gecesi, Kur'an'a göre "bin aydan daha hayırlı" bir gecedir ve Kur'an'ın indirilmeye başlandığı gecedir.</p>
+  </div>
+
 
   <div class="kutu-panel">
     <h3 style="color:var(--mavi)">2️⃣ Oruç İbadeti</h3>
@@ -590,17 +641,32 @@
     <p>Oruca başlamadan önce <b>niyet</b> etmek gerekir. Oruçlu, yalandan ve kötü söz/davranıştan kaçınmalıdır. <b>Orucu bozan durumlar</b>: bilerek yiyip içmek, güneşin battığını zannederek iftar etmek, yağmur/kar yutmak, isteyerek kusmak. <b>Orucu bozmayan durumlar</b>: unutarak yiyip içmek, banyo yapmak, koku sürmek, ağız çalkalamak.</p>
     <div class="aciklama">Üç çeşit oruç vardır: <b>Farz oruç</b> (ramazan orucu ve kazası, kefaret orucu), <b>vacip oruç</b> (adak/nezir orucu), <b>sünnet oruç</b> (Muharrem 9-10-11 ve şevval oruçları). Hastalık/yolculukla tutulamayan oruca <b>kaza orucu</b>, mazeretsiz bozulan oruca <b>kefaret orucu</b> denir. İyileşemeyecek hastalar için <b>fidye</b> verilir.</div>
   </div>
+  <div class="zg-kutu zg-merak">
+    <p class="zg-baslik">🤔 Merak Ettin mi?</p>
+    <p class="zg-metin">Oruç tutmak neden sadece aç kalmak değildir? Çünkü Peygamberimiz, yalandan ve kötü sözden kaçınmayanın orucunun sadece açlık-susuzluktan ibaret kalacağını söylemiştir.</p>
+  </div>
+
 
   <div class="kutu-panel">
     <h3 style="color:var(--mavi)">3️⃣ Oruç İbadetinin İnsana Kazandırdıkları</h3>
     <p>Oruç; <b>sabır</b>, yardımseverlik, cömertlik, dayanışma ve <b>şükür</b> gibi ahlaki değerleri kazandırır. Hz. Peygamber "Oruç sabrın yarısıdır." buyurmuştur. Oruç, hücrelerin yenilenmesine katkı sağlayarak sağlık açısından da faydalıdır. Ramazanda okunan mukabeleler, kılınan teravih namazları ve edilen <b>tövbe</b>ler insanı manevi yönden temizler.</p>
   </div>
+  <div class="zg-kutu zg-soru">
+    <p class="zg-baslik">❓ Günün Sorusu</p>
+    <p class="zg-metin">Oruç tutan birine nasıl destek olabilirsin?</p>
+  </div>
+
 
   <div class="kutu-panel">
     <h3 style="color:var(--mavi)">4️⃣ Bir Dua Öğreniyorum: İftar Duası</h3>
     <p>Oruç açılırken <b>dua</b> etmek sünnettir. İftar duasında Yüce Allah'a olan inanç, güven ve bağlılık dile getirilir; nimetlere şükretmenin önemi hatırlatılır.</p>
     <div class="aciklama"><b>Allâhümme leke sumtü ve bike âmentü ve aleyke tevekkeltü ve alâ rızkıke eftartü</b><br>"Allah'ım! Senin rızan için oruç tuttum, sana inandım, sana güvendim. Senin rızkınla orucumu açtım."</div>
   </div>
+  <div class="zg-kutu zg-hayat">
+    <p class="zg-baslik">🌍 Gerçek Hayat Bağlantısı</p>
+    <p class="zg-metin">Ramazanda paylaşma ve yardımlaşma (fitre, iftar sofraları) toplumsal dayanışmayı güçlendirir; bunu yıl boyu da uygulayabiliriz.</p>
+  </div>
+
 </section>
 
 <!-- KONU TEKRARI TESTİ -->
